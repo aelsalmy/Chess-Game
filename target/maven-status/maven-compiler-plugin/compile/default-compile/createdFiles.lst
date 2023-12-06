@@ -1,0 +1,15 @@
+ChessCore\Pieces\King.class
+ChessCore\Lab7.class
+ChessCore\Pieces\Bishop.class
+ChessCore\Pieces\Rook.class
+ChessCore\Move.class
+ChessCore\Pieces\Piece.class
+ChessCore\Pieces\Pawn.class
+ChessCore\Spot.class
+ChessCore\enums\Colors.class
+ChessCore\ChessGame.class
+ChessCore\Player.class
+ChessCore\ChessBoard.class
+ChessCore\Pieces\Queen.class
+ChessCore\Pieces\Knight.class
+ChessCore\enums\PieceTypes.class

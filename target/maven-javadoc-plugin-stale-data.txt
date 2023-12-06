@@ -1,0 +1,47 @@
+@options
+@packages
+-encoding
+'UTF-8'
+-protected
+-source
+'17'
+-sourcepath
+'E:/Uni/CCE Year 2/Term 5 (Fall 2023)/Programming II/Assignments/Assignment 5 - Chess Game/Lab7/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2023. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'E:/Uni/CCE Year 2/Term 5 (Fall 2023)/Programming II/Assignments/Assignment 5 - Chess Game/Lab7/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'Lab7 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'Lab7 1.0-SNAPSHOT API'
+ChessCore
+ChessCore.enums
+ChessCore.exceptions
+ChessCore.Pieces
+E:\Uni\CCE Year 2\Term 5 (Fall 2023)\Programming II\Assignments\Assignment 5 - Chess Game\Lab7\src\main\java = 1699981989343
+E:\Uni\CCE Year 2\Term 5 (Fall 2023)\Programming II\Assignments\Assignment 5 - Chess Game\Lab7\target\site\apidocs\allclasses-index.html = 1701008553290
+E:\Uni\CCE Year 2\Term 5 (Fall 2023)\Programming II\Assignments\Assignment 5 - Chess Game\Lab7\target\site\apidocs\allpackages-index.html = 1701008553300
+E:\Uni\CCE Year 2\Term 5 (Fall 2023)\Programming II\Assignments\Assignment 5 - Chess Game\Lab7\target\site\apidocs\element-list = 1701008552990
+E:\Uni\CCE Year 2\Term 5 (Fall 2023)\Programming II\Assignments\Assignment 5 - Chess Game\Lab7\target\site\apidocs\help-doc.html = 1701008553330
+E:\Uni\CCE Year 2\Term 5 (Fall 2023)\Programming II\Assignments\Assignment 5 - Chess Game\Lab7\target\site\apidocs\index-all.html = 1701008553320
+E:\Uni\CCE Year 2\Term 5 (Fall 2023)\Programming II\Assignments\Assignment 5 - Chess Game\Lab7\target\site\apidocs\index.html = 1701008553270
+E:\Uni\CCE Year 2\Term 5 (Fall 2023)\Programming II\Assignments\Assignment 5 - Chess Game\Lab7\target\site\apidocs\jquery-ui.overrides.css = 1701008553350
+E:\Uni\CCE Year 2\Term 5 (Fall 2023)\Programming II\Assignments\Assignment 5 - Chess Game\Lab7\target\site\apidocs\member-search-index.js = 1701008553300
+E:\Uni\CCE Year 2\Term 5 (Fall 2023)\Programming II\Assignments\Assignment 5 - Chess Game\Lab7\target\site\apidocs\module-search-index.js = 1701008553300
+E:\Uni\CCE Year 2\Term 5 (Fall 2023)\Programming II\Assignments\Assignment 5 - Chess Game\Lab7\target\site\apidocs\overview-summary.html = 1701008553330
+E:\Uni\CCE Year 2\Term 5 (Fall 2023)\Programming II\Assignments\Assignment 5 - Chess Game\Lab7\target\site\apidocs\overview-tree.html = 1701008553260
+E:\Uni\CCE Year 2\Term 5 (Fall 2023)\Programming II\Assignments\Assignment 5 - Chess Game\Lab7\target\site\apidocs\package-search-index.js = 1701008553300
+E:\Uni\CCE Year 2\Term 5 (Fall 2023)\Programming II\Assignments\Assignment 5 - Chess Game\Lab7\target\site\apidocs\script.js = 1701008553340
+E:\Uni\CCE Year 2\Term 5 (Fall 2023)\Programming II\Assignments\Assignment 5 - Chess Game\Lab7\target\site\apidocs\search.js = 1701008553340
+E:\Uni\CCE Year 2\Term 5 (Fall 2023)\Programming II\Assignments\Assignment 5 - Chess Game\Lab7\target\site\apidocs\serialized-form.html = 1701008553080
+E:\Uni\CCE Year 2\Term 5 (Fall 2023)\Programming II\Assignments\Assignment 5 - Chess Game\Lab7\target\site\apidocs\stylesheet.css = 1701008553330
+E:\Uni\CCE Year 2\Term 5 (Fall 2023)\Programming II\Assignments\Assignment 5 - Chess Game\Lab7\target\site\apidocs\tag-search-index.js = 1701008553300
+E:\Uni\CCE Year 2\Term 5 (Fall 2023)\Programming II\Assignments\Assignment 5 - Chess Game\Lab7\target\site\apidocs\type-search-index.js = 1701008553300

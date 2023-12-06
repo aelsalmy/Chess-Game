@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"ChessCore"},{"l":"ChessCore.enums"},{"l":"ChessCore.exceptions"},{"l":"ChessCore.Pieces"}];updateSearchResults();
