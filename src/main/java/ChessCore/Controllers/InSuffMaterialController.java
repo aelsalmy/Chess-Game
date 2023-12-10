@@ -6,16 +6,16 @@ package ChessCore.Controllers;
 
 import ChessCore.ChessGame;
 import ChessCore.MoveObservor;
-import ChessCore.Observor;
 import ChessCore.Pieces.Piece;
 import ChessCore.enums.PieceTypes;
 import javax.swing.JOptionPane;
+import ChessCore.Subject;
 
 /**
  *
  * @author abdul
  */
-public class InSuffMaterialController implements Observor{
+public class InSuffMaterialController implements Subject{
     
     ChessGame game;
     
