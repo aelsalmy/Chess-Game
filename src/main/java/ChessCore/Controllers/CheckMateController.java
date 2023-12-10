@@ -2,7 +2,6 @@ package ChessCore.Controllers;
 
 import ChessCore.ChessGame;
 import ChessCore.Move;
-import ChessCore.Observor;
 import ChessCore.Pieces.King;
 import ChessCore.Pieces.Pawn;
 import ChessCore.Pieces.Piece;
@@ -12,8 +11,9 @@ import ChessCore.enums.PieceTypes;
 import ChessCore.exceptions.NoPieceFoundException;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
+import ChessCore.Subject;
 
-public class CheckMateController implements Observor {
+public class CheckMateController implements Subject {
    
     ChessGame game;
     

@@ -10,6 +10,8 @@ import ChessCore.exceptions.NoPieceFoundException;
  *
  * @author abdul
  */
+
+//Command Design Patterns
 public interface Command {
     
     public void execute() throws NoPieceFoundException;

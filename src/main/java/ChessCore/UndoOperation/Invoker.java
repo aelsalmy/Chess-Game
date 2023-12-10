@@ -10,6 +10,8 @@ import ChessCore.exceptions.NoPieceFoundException;
  *
  * @author abdul
  */
+
+//Command Design Pattern
 public class Invoker {
     
     public void executeCommand(Command c) throws NoPieceFoundException{

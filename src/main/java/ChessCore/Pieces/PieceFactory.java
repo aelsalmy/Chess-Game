@@ -35,7 +35,8 @@ public class PieceFactory {
     }
     public Piece copy(Piece p){
         this.setColor(p.getPieceColor());
-        return this.getPiece(p.getCurrentPosition() , p.getBoard() , p.getType());
+        Piece newPiece = this.getPiece(p.getCurrentPosition() , p.getBoard() , p.getType());
+        newPiece.setHasMoved(p.getHasMoved());
+        return newPiece;
     }
-    
 }

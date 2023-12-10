@@ -1,5 +1,5 @@
 package ChessCore;
 
-public interface Observor {
+public interface Subject {
     public void update();
 }

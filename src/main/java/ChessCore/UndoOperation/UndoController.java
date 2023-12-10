@@ -1,18 +1,21 @@
 package ChessCore.UndoOperation;
 
-import ChessCore.CaptureMove;
 import ChessCore.CaptureMove.CaptureMoveMemento;
 import ChessCore.ChessGame;
 import ChessCore.Move;
 import ChessCore.Move.MoveMemento;
-import ChessCore.Observor;
 import ChessCore.Pieces.Piece;
 import ChessCore.enums.Colors;
 import ChessCore.exceptions.NoPieceFoundException;
 import java.util.Stack;
 import javax.swing.JOptionPane;
+import ChessCore.Subject;
 
-public class UndoController implements Observor{
+//The Undo Option is implemented using Memento and Command design patterns
+//Memento: to create screenshots of objects
+//Command: to  undo different cases of moves
+
+public class UndoController implements Subject{
     
     private Stack<MoveMemento> moveHistory = new Stack();
     private Stack<CaptureMoveMemento> captureHistory = new Stack();
@@ -77,8 +80,7 @@ public class UndoController implements Observor{
                 case Move -> inv.executeCommand(new MoveUndoCommand(mv , game , piece));
                 case EnPassant -> inv.executeCommand(new EnPassantUndoCommand(mv , game , piece));
                 case Promotion -> inv.executeCommand(new PromotionUndoCommand(mv , game , piece));
-                case Castle -> inv.executeCommand(new CastleUndoCommand(mv , game , piece));
-                
+                case Castle -> inv.executeCommand(new CastleUndoCommand(mv , game , piece));  
             }
             
             if(game.turn.getPlayerColor() == Colors.White){

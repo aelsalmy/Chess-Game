@@ -78,6 +78,14 @@ public class ChessBoardFrame extends javax.swing.JFrame {
             }
         }
     }
+    private void removeLastTableEntry(){
+        DefaultTableModel model;
+        model = (DefaultTableModel) jTable1.getModel();
+       try
+       {model.removeRow(jTable1.getRowCount()-1);
+       }catch(ArrayIndexOutOfBoundsException AIEO)
+       {}
+    }
   
     public void flipboard() {
         if(this.flippable){
@@ -222,6 +230,7 @@ public class ChessBoardFrame extends javax.swing.JFrame {
                 "Moves Log",
             }
         ));
+        jTable1.setEnabled(false);
         jScrollPane1.setViewportView(jTable1);
 
         jButton1.setText("Undo Move");
@@ -288,6 +297,8 @@ public class ChessBoardFrame extends javax.swing.JFrame {
         }
         
         this.resetAllSpots();
+        
+        this.removeLastTableEntry();
         
     }//GEN-LAST:event_jButton1ActionPerformed
 

@@ -2,13 +2,13 @@ package ChessCore.Controllers;
 
 import ChessCore.ChessGame;
 import ChessCore.Move;
-import ChessCore.Observor;
 import ChessCore.Pieces.Piece;
 import ChessCore.exceptions.NoPieceFoundException;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
+import ChessCore.Subject;
 
-public class StaleMateController implements Observor{
+public class StaleMateController implements Subject{
     
     private ChessGame game;
     

@@ -33,19 +33,14 @@ public class ChessGame {
         this.mainBoard = new ChessBoard();
         this.gameInProgress = true;
         
+        final PieceTypes[] types = {PieceTypes.Rook , PieceTypes.Knight , PieceTypes.Bishop , PieceTypes.Queen , PieceTypes.King , PieceTypes.Bishop , PieceTypes.Knight , PieceTypes.Rook};
+                
         PieceFactory pieceFactory = new PieceFactory();
         
         pieceFactory.setColor(Colors.Black);
-
-        //Put all White Pieces on Board
-        mainBoard.board[0][0] = new Spot(pieceFactory.getPiece(mainBoard.board[0][0], this.mainBoard , PieceTypes.Rook));
-        mainBoard.board[0][1] = new Spot(pieceFactory.getPiece(mainBoard.board[0][1], this.mainBoard , PieceTypes.Knight));
-        mainBoard.board[0][2] = new Spot(pieceFactory.getPiece(mainBoard.board[0][2], this.mainBoard , PieceTypes.Bishop));
-        mainBoard.board[0][3] = new Spot(pieceFactory.getPiece(mainBoard.board[0][3], this.mainBoard , PieceTypes.Queen));
-        mainBoard.board[0][4] = new Spot(pieceFactory.getPiece(mainBoard.board[0][4], this.mainBoard , PieceTypes.King));
-        mainBoard.board[0][5] = new Spot(pieceFactory.getPiece(mainBoard.board[0][5], this.mainBoard , PieceTypes.Bishop));
-        mainBoard.board[0][6] = new Spot(pieceFactory.getPiece(mainBoard.board[0][6], this.mainBoard , PieceTypes.Knight));
-        mainBoard.board[0][7] = new Spot(pieceFactory.getPiece(mainBoard.board[0][7], this.mainBoard , PieceTypes.Rook));
+        
+        for(int i = 0 ; i < 8 ; i++)
+            mainBoard.board[0][i] = new Spot(pieceFactory.getPiece(mainBoard.board[0][i], this.mainBoard , types[i]));
 
         for (int i = 0; i < 8; i++) {
             mainBoard.board[1][i] = new Spot(pieceFactory.getPiece(mainBoard.board[1][i], this.mainBoard , PieceTypes.Pawn));
@@ -53,15 +48,8 @@ public class ChessGame {
         
         pieceFactory.setColor(Colors.White);
 
-        //Put all Black Pieces on Board
-        mainBoard.board[7][0] = new Spot(pieceFactory.getPiece(mainBoard.board[7][0], this.mainBoard , PieceTypes.Rook));
-        mainBoard.board[7][1] = new Spot(pieceFactory.getPiece(mainBoard.board[7][1], this.mainBoard , PieceTypes.Knight));
-        mainBoard.board[7][2] = new Spot(pieceFactory.getPiece(mainBoard.board[7][2], this.mainBoard , PieceTypes.Bishop));
-        mainBoard.board[7][3] = new Spot(pieceFactory.getPiece(mainBoard.board[7][3], this.mainBoard , PieceTypes.Queen));
-        mainBoard.board[7][4] = new Spot(pieceFactory.getPiece(mainBoard.board[7][4], this.mainBoard , PieceTypes.King));
-        mainBoard.board[7][5] = new Spot(pieceFactory.getPiece(mainBoard.board[7][5], this.mainBoard , PieceTypes.Bishop));
-        mainBoard.board[7][6] = new Spot(pieceFactory.getPiece(mainBoard.board[7][6], this.mainBoard , PieceTypes.Knight));
-        mainBoard.board[7][7] = new Spot(pieceFactory.getPiece(mainBoard.board[7][7], this.mainBoard , PieceTypes.Rook));
+        for(int i = 0 ; i < 8 ; i++)
+            mainBoard.board[7][i] = new Spot(pieceFactory.getPiece(mainBoard.board[7][i], this.mainBoard , types[i]));
 
         for (int i = 0; i < 8; i++) {
             mainBoard.board[6][i] = new Spot(pieceFactory.getPiece(mainBoard.board[6][i] , this.mainBoard , PieceTypes.Pawn));
